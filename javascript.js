@@ -1,9 +1,9 @@
 "use strict";
 
-const projectBar = document.querySelector("#project-bar");
+const topBar = document.querySelector("#top-bar");
 const calendarContainer = document.querySelector("#calendar-container");
-const newProjectBtn = document.querySelector("#new-project-btn");
-const newProjectModal = document.querySelector("#new-project-modal");
+const newTripBtn = document.querySelector("#new-trip-btn");
+const newTripModal = document.querySelector("#new-trip-modal");
 
 let duration = 0;
 
@@ -34,7 +34,26 @@ const picker = new easepick.create({
   },
 });
 
-newProjectBtn.addEventListener("click", function () {
-  newProjectModal.classList.remove("hidden");
-  projectBar.classList.add("hidden");
+newTripBtn.addEventListener("click", function () {
+  newTripModal.classList.remove("hidden");
+  topBar.classList.add("hidden");
 });
+
+newTripModal
+  .querySelector(".btn-modal-close")
+  .addEventListener("click", function () {
+    newTripModal.classList.add("hidden");
+  });
+
+newTripModal
+  .querySelector(".btn-modal-create")
+  .addEventListener("click", function () {
+    calendarContainer.classList.remove("hidden");
+  });
+
+// const projectObject = {
+//   Name: "name",
+//   Dates: { start: "start", end: "end" },
+//   Duration: "duration",
+//   Days: [{}],
+// };

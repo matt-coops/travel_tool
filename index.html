@@ -10,8 +10,9 @@
 </head>
   </head>
   <body>
-    <div id="new-project-modal" class="hidden">
-        <label for="project-name">Name: </label> <input type="text">
+    <div id="new-trip-modal" class="hidden">
+      <button class="btn-modal btn-modal-close">X</button><br><br>
+        <label for="trip-name">Name: </label> <input type="text">
         <p>
             <label for="datepicker">Dates: </label>
              <input id="datepicker"/>
@@ -19,15 +20,44 @@
    
         <p><div class="duration">
         Duration: </div></p>
+        <label for="destination">Icon: </label>
+        <select class="form__input" id="destination" name="destination">
+          <option value="australia">Aussie</option>
+          <option value="newzealand">NZ</option>
+          <option value="usa">USA</option>
+          <option value="mexico">Mexico</option>
+        </select>
         <div id="modal-buttons">
-            <button class="btn-modal btn-discard">Discard</button>
-            <button class="btn-modal btn-create">Create</button>
+          <input type="submit" class="btn-modal btn-modal-create" value="💾"></input>
+            <button class="btn-modal  btn-closeform">🗑️</button>
         </div>
     </div>
-    <div id="project-bar">
-      <button id="new-project-btn">New</button>
-    </div>
-    <div id="calendar-container" class="hidden"></div>
+    <div id="top-bar">
+      <button id="new-trip-btn">➕</button>
+        <div id="trip-bar">
+          <button id="trip-left"><</button>
+          <div class="trip" data-trip="0">Trip</div>
+          <div class="trip" data-trip="1">Trip</div>
+          <div class="trip" data-trip="2">Trip</div>
+          <div class="trip" data-trip="3">Trip</div>
+          <div class="trip" data-trip="4">Trip</div>
+          <button id="trip-right">></button>
+      </div>
+  </div>
+    <div id="calendar-container" class="hidden">
+      <div class="day calendar-date"></div>
+      <div class="day calendar-body"></div>
+      <div class="day calendar-date"></div>
+      <div class="day calendar-body"></div>
+      <div class="day calendar-date"></div>
+      <div class="day calendar-body"></div>
+      <div class="day calendar-date"></div>
+      <div class="day calendar-body"></div>
+      <div class="day calendar-date"></div>
+      <div class="day calendar-body"></div>
+      <div class="day calendar-date"></div>
+      <div class="day calendar-body"></div>
+  </div>
     <script src="javascript.js" defer></script>
   </body>
 </html>
