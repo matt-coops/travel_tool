@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Travel Tool</title>
+    <script src="https://cdn.jsdelivr.net/npm/@easepick/bundle@1.2.1/dist/index.umd.min.js"></script>
+</head>
+  </head>
+  <body>
+    <div id="new-project-modal" class="hidden">
+        <label for="project-name">Name: </label> <input type="text">
+        <p>
+            <label for="datepicker">Dates: </label>
+             <input id="datepicker"/>
+       </p>
+   
+        <p><div class="duration">
+        Duration: </div></p>
+        <div id="modal-buttons">
+            <button class="btn-modal btn-discard">Discard</button>
+            <button class="btn-modal btn-create">Create</button>
+        </div>
+    </div>
+    <div id="project-bar">
+      <button id="new-project-btn">New</button>
+    </div>
+    <div id="calendar-container" class="hidden"></div>
+    <script src="javascript.js" defer></script>
+  </body>
+</html>

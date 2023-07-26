@@ -1,0 +1,35 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#project-bar {
+  border: solid 1px black;
+  min-width: 800px;
+  height: 70px;
+}
+
+#new-project-btn {
+  height: 70px;
+  width: 70px;
+}
+
+#new-project-modal {
+  border: solid 1px black;
+  padding: 20px;
+}
+
+#calendar-container {
+  margin-top: 20px;
+  border: solid 1px black;
+  width: 1400px;
+  min-width: 700px;
+}
+
+#new-project-modal {
+  background-color: white;
+  position: absolute;
+}
+
+.hidden {
+  display: none;
+}
